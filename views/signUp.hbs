@@ -1,0 +1,115 @@
+<main>
+    <div class="wrapper">
+        <div class="image">
+            <img src="/images/skinCover.jpeg" alt="skinCover.jpeg">
+        </div>
+        <div class="container">
+            <h1>Sign up</h1>
+            <form action="/user/signUp" method="post" enctype="multipart/form-data">
+                <div class="il-wrapper">
+                    <label for="name" id="label-name">Name: </label>
+                    <input type="text" id="name" class="input" name="name" placeholder="Name" required>
+                </div>
+                <div class="il-wrapper">
+                    <label for="age" id="label-age">Age: </label>
+                    <input type="number" id="age" class="input" name="age" placeholder="Age" required>
+                </div>
+                <div class="il-wrapper">
+                    <label id="label-gender">Gender: </label>
+                    <div class="radio-wrapper">
+                        <div class="radio-each">
+                            <input type="radio" class="gender" id="male" name="gender" value="Male" required>
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="radio-each">
+                            <input type="radio" class="gender" id="female" name="gender" value="Female" required>
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="radio-each">
+                            <input type="radio" class="gender" id="other" name="gender" value="Other" required>
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="il-wrapper">
+                    <label for="email" id="label-email">Email: </label>
+                    <input type="email" id="email" class="input" name="email" placeholder="Email" required>
+                </div>
+                <div class="il-wrapper">
+                    <label for="phone" id="label-phone">Phone number: </label>
+                    <input type="phone" id="phone" class="input" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="il-wrapper">
+                    <label for="password" id="label-password">Password: </label>
+                    <input type="password" id="password" class="input" name="password" placeholder="Password" required>
+                </div>
+                <div class="il-wrapper">
+                    <label for="password" id="label-password">Confirm Password: </label>
+                    <input type="password" id="password" class="input" name="confirmPassword" placeholder="Confirm Password"
+                        required>
+                </div>
+                <div class="checkbox-wrapper">
+                    <label for="disorders" id="label-disorders" required>Do you have any of these?</label>
+                    <div>
+                        <div class="checkbox-each">
+                            <input type="checkbox" class="disorders" name="disorders" value="Diabetes">
+                            <label id="label-checkbox">Diabetes</label>
+                        </div>
+                        <div class="checkbox-each">
+                            <input type="checkbox" class="disorders" name="disorders" value="Thyroid">
+                            <label id="label-checkbox">Thyroid</label>
+                        </div>
+                        <div class="checkbox-each">
+                            <input type="checkbox" class="disorders" name="disorders" value="Anaemia">
+                            <label id="label-checkbox">Anaemia</label>
+                        </div>
+                        <div class="checkbox-each">
+                            <input type="checkbox" class="disorders" name="disorders" value="Depression">
+                            <label id="label-checkbox">Depression</label>
+                        </div>
+                        <div class="checkbox-each">
+                            <input type="checkbox" class="disorders" name="disorders" value="Insomnea">
+                            <label id="label-checkbox">Insomnea</label>
+                        </div>
+                        <div class="checkbox-each">
+                            <input type="checkbox" class="disorders" name="disorders" value="None">
+                            <label id="label-checkbox">None</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="il-wrapper">
+                    <label for="skin" id="label-skin">Skin Color: </label>
+                    <select name="skin" class="input" required>
+                        <option selected="selected" value="">Select</option>
+                        <option value="fair-light">fair or light skinned</option>
+                        <option value="medium-light">Medium (Light brown)</option>
+                        <option value="dark">Medium dark (Moderate brown)</option>
+                        <option value="dark-Brown">Dark Brown</option>
+                        <option value="black">Black</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="il-wrapper">
+                    <label for="file" id="label-file">Upload photo: </label>
+                    <input type="file" id="file" class="input" name="profile">
+                </div>
+                <div class="il-wrapper">
+                    <label id="label-role">Role: </label>
+                    <div class="radio-wrapper">
+                        <div class="radio-each">
+                            <input type="radio" class="role" id="member" name="role" value="Member" required>
+                            <label for="member">Member</label>
+                        </div>
+                        <div class="radio-each">
+                            <input type="radio" class="role" id="doctor" name="role" value="Doctor" required>
+                            <label for="doctor">Doctor</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
