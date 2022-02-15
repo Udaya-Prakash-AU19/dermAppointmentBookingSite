@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path')
 const app = express();
+const { getWelcomePage } = require('./controller/user_controller')
 require('dotenv').config()
 
 // mongoose connection
@@ -28,7 +29,10 @@ const bodyparser = require('body-parser')
 app.use(bodyparser.json())
 app.use(bodyparser.urlencoded({extended:true}))
 
-// route for website
+// Root route for website
+app.get('/', getWelcomePage)
+
+
 const router = require('./route/user_routes')
 //user login and register router
 app.use('/user',router)

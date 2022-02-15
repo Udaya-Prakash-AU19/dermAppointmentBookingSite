@@ -1,6 +1,5 @@
 const router = require("express").Router();
 const {
-    getWelcomePage,
     postToGetSignUp,
     registerUser,
     postToGetLogin,
@@ -15,8 +14,6 @@ const {
 const {auth} = require('../auth/jwt_auth')
 const fileUpload = require('../multer/imgUpload')
 
-
-router.get('/dermatologist',getWelcomePage)
 
 // To get and post signup
 router.get('/postToGetSignUp',postToGetSignUp)
